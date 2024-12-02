@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - Plantify</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9f4;
+            color: #2d4739;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        header .logo span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #2d572c;
+            font-size: 2.5rem;
+            margin: 40px 0 20px 0;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .goals, .specialties, .features {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .goals ul, .specialties ul, .features ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .features .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .features .feature-item img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer .social-icons {
+            margin: 10px 0;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        footer .social-icons a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                padding: 20px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 10px;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo"><img src="./Images/LogoImg.png" alt="Plantify Logo" />
+            <span>Plantify</span></div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about-us.html">About us</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="contact-us.html">Contact us</a>
+        </nav>
+    </header>
+
+    <h1>About us</h1>
+
+    <section>
+        <h2>Welcome to Plantify!</h2>
+        <p>
+            We are passionate about promoting a healthier, sustainable lifestyle by embracing the power of plants.
+            Our mission is to inspire and empower individuals to explore the benefits of a plant-based diet and
+            lifestyle.
+        </p>
+        <p>
+            Through delicious recipes, educational resources, and community support, we aim to make plant-based living
+            accessible for everyone.
+        </p>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="goals">
+        <h2>Our Goals</h2>
+        <ul>
+            <li>Promote sustainable and eco-friendly living practices.</li>
+            <li>Provide comprehensive resources on plant-based diets.</li>
+            <li>Foster a supportive community for plant enthusiasts.</li>
+            <li>Encourage innovation in plant-based product development.</li>
+            <li>Educate the public on the environmental and health benefits of plants.</li>
+        </ul>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="specialties">
+        <h2>Our Specialties</h2>
+        <ul>
+            <li><strong>Delicious Recipes:</strong> Curated plant-based recipes that are easy to follow and nutritious.</li>
+            <li><strong>Educational Resources:</strong> Articles, guides, and tutorials on various aspects of plant-based living.</li>
+            <li><strong>Community Support:</strong> Forums and groups where members can share experiences and advice.</li>
+            <li><strong>Product Reviews:</strong> Honest reviews of plant-based products to help you make informed choices.</li>
+            <li><strong>Workshops and Events:</strong> Interactive sessions and events to engage and educate our community.</li>
+        </ul>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature-item">
+            <img src="./Icons/Ingredients.png" alt="Recipe Icon">
+            <span>Extensive Recipe Collection</span>
+        </div>
+        <div class="feature-item">
+            <img src="./Icons/Education.png" alt="Education Icon">
+            <span>In-Depth Educational Content</span>
+        </div>
+        <div class="feature-item">
+            <img src="./Icons/Community.png" alt="Community Icon">
+            <span>Active Community Forums</span>
+        </div>
+        <div class="feature-item">
+            <img src="./Icons/Workshop.png" alt="Events Icon">
+            <span>Regular Workshops and Webinars</span>
+        </div>
+        <div class="feature-item">
+            <img src="./Icons/Review.png" alt="Review Icon">
+            <span>Trusted Product Reviews</span>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Plantify. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+        </div>
+        <p>Contact us at: <a href="mailto:support@plantify.com" style="color: white; text-decoration: underline;">support@plantify.com</a> | Address: 123 Green Lane, Eco City, World</p>
+    </footer>
+</body>
+
+</html>

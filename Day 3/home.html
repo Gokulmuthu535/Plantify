@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantify - A Plant-Based World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        header .logo span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .carousel {
+            max-width: 50%;
+            position: relative;
+            display:flex;
+            align-items: center;
+            overflow: hidden;
+            flex:1;
+            margin-right: 20px;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+            display: none;
+            border-radius: 8px;
+        }
+
+        .carousel img.active {
+            display: block;
+        }       
+        .text {
+            flex: 1;
+        }
+
+        .text h1 {
+            color: #2d572c;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 97%;
+            max-width: 100%;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            margin-top: 20px;
+        }
+
+        footer .social-icons {
+            margin: 10px 0;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer .social-icons a:hover {
+            text-decoration: underline;
+        }
+        .quote {
+            background: #2d572c; 
+            color: #ffffff;      
+            padding: 10px 20px;  
+            border-radius: 8px;  
+            font-size: 1.2rem;    
+            font-style: italic;  
+            font-family: 'Arial', sans-serif;  
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            margin-top: 20px;     
+            display: inline-block; 
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo"><img src="./Images/LogoImg.png" alt="Plantify Logo" />
+            <span>Plantify</span></div>
+        <nav>
+            <a href="about-us.html">About us</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="contact-us.html">Contact us</a>
+        </nav>
+    </header>
+<div class ="content">
+    <!-- Image Carousel -->
+    <div class="carousel">
+        <img src="./Images/HomeImg1.jpg" alt="Nature" class="active">
+        <img src="./Images/HomeImg2.jpg" alt="Plant Based Lifestyle">
+        <img src="./Images/HomeImg3.jpg" alt="Eco-Friendly Living">
+        <img src="./Images/HomeImg4.jpg" alt="Grow Your Own Plants">
+        <img src="./Images/HomeImg5.jpg" alt="Healthy Plant Foods">
+    </div>
+
+    <div class = "text">
+        <h1>Welcome to Plantify!</h1>
+        <p>
+            At Plantify, we believe in a greener, healthier world. Our platform is dedicated to promoting a plant-based
+            lifestyle,
+            sustainable living, and eco-friendly choices. Whether you're looking to grow your own plants, adopt a vegan
+            diet,
+            or learn more about the environment, we're here to guide you.
+        </p>
+        <div class="quote">
+            "Every leaf counts when you’re building a greener planet."
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Plantify. All rights reserved.</p>
+        <div>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>Contact us at: support@plantify.com | Address: 123 Green Lane, Eco City, World</p>
+    </footer>
+    <script>
+        // Carousel Script
+        const images = document.querySelectorAll('.carousel img');
+        let currentIndex = 0;
+
+        setInterval(() => {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }, 3000); // Change image every 3 seconds
+    </script>
+
+</body>
+
+</html>
